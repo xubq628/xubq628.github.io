@@ -1,0 +1,150 @@
+# ============================================================================
+# 论文/专利/软著源文件 —— 新增条目后运行 build.py 即可更新 Publications 页
+#
+# 字段说明：
+#   authors    作者列表（"Xu, B." 会自动加粗）
+#   title      标题
+#   venue      期刊/会议名称（斜体显示）
+#   detail     年份、卷期、页码等
+#   scholar_id 【可选】Google Scholar 论文 ID（citation_for_view= 中冒号后的部分），
+#              填写后标题自动生成跳转链接
+#   link       【可选】自定义链接，优先级高于 scholar_id
+# 两个链接字段都留空时，标题显示为纯文本。
+# ============================================================================
+
+journal_articles:
+  - authors: "Xu, B., Liu, C."
+    title: A 3D reconstruction method for buildings based on monocular vision
+    venue: Computer-Aided Civil and Infrastructure Engineering
+    detail: "2022, 37(3): 354&ndash;369"
+    scholar_id: 9yKSN-GCB0IC
+    link: "https://doi.org/10.1111/mice.12715"
+
+  - authors: "Xu, B., Liu, C."
+    title: Pavement crack detection algorithm based on generative adversarial network and convolutional neural network under small samples
+    venue: Measurement
+    detail: "2022, 196: 111219"
+    scholar_id: u-x6o8ySG0sC
+    link: "https://doi.org/10.1016/j.measurement.2022.111219"
+
+  - authors: "Liu, C., Xu, B."
+    title: A night pavement crack detection method based on image-to-image translation
+    venue: Computer-Aided Civil and Infrastructure Engineering
+    detail: "2022, 37(13): 1737&ndash;1753"
+    scholar_id: u5HHmVD_uO8C
+    link: "https://doi.org/10.1111/mice.12849"
+
+  - authors: "Xu, B., Liu, X., Feng, G., Liu, C."
+    title: A monocular-based framework for accurate identification of spatial-temporal distribution of vehicle wheel loads under occlusion scenarios
+    venue: Engineering Applications of Artificial Intelligence
+    detail: "2024, 133: 107972"
+    scholar_id: LkGwnXOMwfcC
+    link: "https://doi.org/10.1016/j.engappai.2024.107972"
+
+  - authors: "Xu, B., Liu, C."
+    title: Keypoint detection-based and multi-deep learning model integrated method for identifying vehicle axle load spatial-temporal distribution
+    venue: Advanced Engineering Informatics
+    detail: "2024, 62: 102688"
+    scholar_id: roLk4NBRz8UC
+    link: "https://doi.org/10.1016/j.aei.2024.102688"
+
+  - authors: "Xu, B., Liu, C."
+    title: A deep kernel regression-based forecasting framework for temperature-induced strain in large-span bridges
+    venue: Engineering Structures
+    detail: "2025, 323: 119259"
+    scholar_id: Se3iqnhoufwC
+    link: "https://doi.org/10.1016/j.engstruct.2024.119259"
+
+  - authors: "Xu, B., Liu, C."
+    title: Bayesian-optimized deep learning model for real-time spatial distribution identification of vehicle axle load
+    venue: Expert Systems with Applications
+    detail: "2025, 264: 125872"
+    scholar_id: UebtZRa9Y70C
+    link: "https://doi.org/10.1016/j.eswa.2024.125872"
+
+  - authors: "Xu, B., Jiao, X., Wang, Q.-C., Liu, C."
+    title: A review of computer vision-based algorithms for vehicle load spatial-temporal distribution identification
+    venue: Measurement Science and Technology
+    detail: "2026, 37(27): 272001"
+    scholar_id: ULOm3_A8WrAC
+    link: "https://doi.org/10.1088/1361-6501/ae6f38"
+
+  - authors: "Sun, Q., Zheng, R., Xu, B."
+    title: Bayesian-optimized unsupervised semantic segmentation model for structural crack detection
+    venue: Advances in Structural Engineering
+    detail: "2024, 27(3): 432&ndash;449"
+    scholar_id: _FxGoFyzp5QC
+    link: "https://doi.org/10.1177/13694332231222093"
+
+  - authors: "Wang, T., Li, M., Wang, H., Li, P., Xu, B., Hu, D."
+    title: Context-aware depth estimation for improved 3D reconstruction of homogeneous indoor environments
+    venue: Automation in Construction
+    detail: "2025, 177: 106343"
+    scholar_id: MXK_kJrjxJIC
+    link: "https://doi.org/10.1016/j.autcon.2025.106343"
+
+  - authors: "Liu, C., Xu, B."
+    title: Weakly-supervised structural surface crack detection algorithm based on class activation map and superpixel segmentation
+    venue: Advances in Bridge Engineering
+    detail: "2023, 4(1): 27"
+    scholar_id: YsMSGLbcyi4C
+    link: "https://doi.org/10.1186/s43251-023-00106-0"
+
+  - authors: "Wu, Y., Wang, T., Gu, R., Liu, C., Xu, B."
+    title: Nighttime vehicle detection algorithm based on image translation technology
+    venue: Journal of Intelligent &amp; Fuzzy Systems
+    detail: "2024, 46(2): 5377&ndash;5389"
+    scholar_id: kNdYIx-mwKoC
+    link: "https://doi.org/10.3233/jifs-233899"
+
+conference_papers:
+  - authors: "Xu, B., Liu, C."
+    title: Detection algorithm of structural surface cracks based on class activation map
+    venue: IABSE Congress
+    detail: Nanjing, China, 2022
+    scholar_id: ufrVoPGSRksC
+    link: "https://doi.org/10.2749/nanjing.2022.1216"
+
+  - authors: "Xu, B., Shi, Z., Liu, C."
+    title: Real-time traffic load monitoring framework based on deep learning model and statistical regularities of vehicle shape prior information
+    venue: The Eighteenth East Asia-Pacific Conference on Structural Engineering and Construction (EASEC-18)
+    detail: Chiang Mai, Thailand, 2024
+    scholar_id: KlAtU1dfN6UC
+    link: "https://doi.org/10.1007/978-981-95-0090-1_66"
+
+  - authors: "Xu, B., Tian, X., Han, J., Liu, C., Wang, Q.-C."
+    title: A two-stage blind source separation method for structural health monitoring signals integrating deep kernel regression and wavelet multiresolution analysis
+    venue: 43rd International Symposium on Automation and Robotics in Construction (ISARC 2026)
+    detail: Singapore, 2026
+    scholar_id: YOwf2qJgpHMC
+    link: "https://doi.org/10.22260/isarc2026/0302"
+
+patents:
+  - authors: "Liu, C., Xu, B."
+    title: A method for calibrating external parameters of a zoom camera for 3D reconstruction of buildings
+    detail: "Invention Patent: CN202010431827.3, 2023"
+
+  - authors: "Liu, C., Xu, B."
+    title: A real-time vehicle position detection method based on road geometric information
+    detail: "Invention Patent: CN202110641118.2, 2023"
+
+  - authors: "Liu, C., Xu, B."
+    title: A monitoring method for vehicle axle load position
+    detail: "Invention Patent: CN115661749B, 2026"
+
+  - authors: "Jiang, X., Xu, Z., Wang, A., He, Z., Xu, B., Yang, C., Hao, C."
+    title: A beam segment sliding device suitable for curved beams
+    detail: "Invention Patent: CN201811427336.0, 2020"
+
+software_copyrights:
+  - authors: "Liu, C., Xu, B., et al."
+    title: Crack Recognition and Detection Software in Complex Environments
+    detail: "Tongji University, 2021. Registration No.: 2021SR1353912"
+
+  - authors: "Liu, C., Xu, B., et al."
+    title: Concrete Multi-Scale Crack Recognition Software
+    detail: "Tongji University, 2022. Registration No.: 2022SR1261160"
+
+  - authors: "Liu, C., Xu, B., et al."
+    title: Nighttime Structural Surface Defect Detection Software
+    detail: "Tongji University, 2022. Registration No.: 2022SR0531677"

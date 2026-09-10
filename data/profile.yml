@@ -1,0 +1,166 @@
+# ============================================================================
+# 个人信息源文件 —— 修改本文件后运行 build.py 即可更新所有页面
+#
+# 中英双语约定：
+#   英文写在字段本身（如 role），中文写在同名 _zh 字段（如 role_zh）。
+#   渲染中文页面时优先取 _zh，缺失则自动回退英文。
+#   → 不写 _zh 就是该字段中英一致（例如期刊名、审稿期刊，无需翻译）。
+# ============================================================================
+
+# ---- 基本信息（侧栏 + 全站） ----
+name: Boqiang Xu
+name_zh: 许博强
+role: Postdoctoral Fellow
+role_zh: 博士后研究员
+department: Department of Architecture and Civil Engineering
+department_zh: 建筑学及土木工程学系
+affiliation: City University of Hong Kong
+affiliation_zh: 香港城市大学
+location: Hong Kong, China
+location_zh: 中国香港
+avatar: images/profile.jpg
+cv_pdf: files/CV_Boqiang_Xu.pdf
+
+emails:
+  - bq.xu@cityu.edu.hk
+  - xubq628@gmail.com
+
+# Google Scholar 用户 ID（主页 URL 中 user= 后面的部分）
+scholar_user: bW6bHowAAAAJ
+
+# ---- 引用统计（Publications 页顶部显示） ----
+citations: 348
+h_index: 9
+stats_as_of: September 2026
+stats_as_of_zh: 2026 年 9 月
+
+# ---- About 页：个人简介段落（支持 HTML 标签，如 <a href="...">） ----
+about:
+  - >-
+    I am a Postdoctoral Fellow in the Department of Architecture and Civil Engineering at
+    <a href="https://www.cityu.edu.hk/" target="_blank" rel="noopener">City University of Hong Kong</a>.
+    I received my Ph.D. in Civil Engineering from the Department of Bridge Engineering, College of Civil Engineering,
+    <a href="https://www.tongji.edu.cn/" target="_blank" rel="noopener">Tongji University</a> (2025),
+    and was a visiting Ph.D. student in the Department of the Built Environment at the
+    <a href="https://www.nus.edu.sg/" target="_blank" rel="noopener">National University of Singapore</a> (2023&ndash;2024),
+    supported by the China Scholarship Council.
+  - >-
+    My research focuses on computer vision and machine learning for civil infrastructure,
+    including structural health monitoring, vehicle load identification, vision-based damage detection,
+    and time-series modeling of bridge monitoring data.
+about_zh:
+  - >-
+    我是<a href="https://www.cityu.edu.hk/" target="_blank" rel="noopener">香港城市大学</a>建筑学及土木工程学系博士后研究员。
+    2025 年于<a href="https://www.tongji.edu.cn/" target="_blank" rel="noopener">同济大学</a>土木工程学院桥梁工程系获土木工程博士学位，
+    2023 至 2024 年由国家留学基金委（CSC）资助，赴
+    <a href="https://www.nus.edu.sg/" target="_blank" rel="noopener">新加坡国立大学</a>建筑环境系访问学习。
+  - >-
+    我的研究聚焦于面向土木基础设施的计算机视觉与机器学习，涵盖结构健康监测、车辆荷载识别、
+    基于视觉的损伤检测，以及桥梁监测数据的时间序列建模。
+
+# ---- 研究兴趣 ----
+research_interests_intro: >-
+  Structural health monitoring &middot; Digital twin &middot; Computer vision &middot;
+  Machine / deep learning &middot; Signal processing
+research_interests_intro_zh: >-
+  结构健康监测 &middot; 数字孪生 &middot; 计算机视觉 &middot;
+  机器学习 / 深度学习 &middot; 信号处理
+research_interests:
+  - Monocular 3D vision algorithms based on geometric priors (standardized 3D reconstruction, automated homography estimation)
+  - Vision-based detection of structural and bridge damages under small samples or changing illumination
+  - Vision systems for accurate spatial-temporal identification of vehicle loads in complex environments
+  - Time-frequency feature analysis and blind source separation of bridge health monitoring signals
+  - Integration of Bayesian methods and deep learning for time-series prediction of sensor data
+  - Vehicle load inversion and structural condition assessment based on vehicle-induced responses
+research_interests_zh:
+  - 基于几何先验的单目三维视觉算法（标准化三维重建、单应矩阵自动估计）
+  - 小样本或光照变化条件下的结构与桥梁损伤视觉检测
+  - 复杂环境下车辆荷载时空分布精确识别的视觉系统
+  - 桥梁健康监测信号的时频特征分析与盲源分离
+  - 贝叶斯方法与深度学习融合的传感器数据时间序列预测
+  - 基于车致响应的车辆荷载反演与结构状态评估
+
+# ---- 教育经历 ----
+education:
+  - degree: Ph.D. in Civil Engineering (integrated master&ndash;doctoral program)
+    degree_zh: 土木工程博士（硕博连读）
+    school: Department of Bridge Engineering, Tongji University
+    school_zh: 同济大学桥梁工程系
+    period: 2021&ndash;2025
+  - degree: Visiting Ph.D. Student
+    degree_zh: 访问博士生（联合培养）
+    school: Department of the Built Environment, National University of Singapore
+    school_zh: 新加坡国立大学建筑环境系
+    period: 2023&ndash;2024
+  - degree: M.Eng. Candidate in Civil Engineering (exempt from admission exam)
+    degree_zh: 土木工程硕士研究生（免试入学）
+    school: Tongji University
+    school_zh: 同济大学
+    period: 2019&ndash;2021
+  - degree: B.Eng. in Civil Engineering
+    degree_zh: 土木工程学士
+    school: Tongji University
+    school_zh: 同济大学
+    period: 2015&ndash;2019
+  - degree: Minor in Mathematics and Applied Mathematics
+    degree_zh: 数学与应用数学（辅修）
+    school: Tongji University
+    school_zh: 同济大学
+    period: 2015&ndash;2017
+
+# ---- 科研项目 ----
+projects:
+  - role: Key Researcher
+    role_zh: 主要研究人员
+    title: Intelligent Operation and Maintenance Technology of Long-Span Hybrid Beam Rigid Frame Bridge Based on Vehicle-Bridge Correlation Prediction
+    title_zh: 基于车桥相关性预测的大跨混合梁刚构桥智能运维技术
+    funder: Science and Technology Project of Zhejiang Provincial Department of Transportation
+    funder_zh: 浙江省交通运输厅科技项目
+    period: 2022&ndash;2024
+  - role: Key Researcher
+    role_zh: 主要研究人员
+    title: Intelligent Vehicle-Bridge Correlation Monitoring Technology of Long-Span Continuous Beam Bridge with Corrugated Steel Webs
+    title_zh: 波形钢腹板大跨连续梁桥车桥相关性智能监测技术
+    funder: Science and Technology Project of Hebei Provincial Department of Transportation
+    funder_zh: 河北省交通运输厅科技项目
+    period: 2022&ndash;2024
+
+# ---- 荣誉奖励（每行一条，格式自由：名称, 颁发方, 年份） ----
+honors:
+  - Excellent Ph.D. Graduate, Tongji University, 2025
+  - Silver Award, China International College Students&rsquo; Innovation Competition, Ministry of Education, 2025
+  - Visiting Ph.D. Program Scholarship, China Scholarship Council, 2023
+  - Scholarship of Excellence for Doctoral Students, Tongji University, 2022 &amp; 2024
+  - Scholarship of Excellence for Doctoral Freshmen, Tongji University, 2021
+  - Second Prize, 13th China Postgraduate Mathematical Modeling Competition, 2020
+  - Scholarship of Excellence for Postgraduates, Tongji University, 2020
+  - First Prize, 8th Mathematics Competition of Chinese College Students, Chinese Mathematical Society, 2016
+  - Scholarship of Excellence for Undergraduates, Tongji University, 2016&ndash;2018
+honors_zh:
+  - 同济大学优秀博士毕业生，2025
+  - 中国国际大学生创新大赛银奖，教育部，2025
+  - 国家建设高水平大学公派研究生项目奖学金，国家留学基金委，2023
+  - 同济大学优秀博士研究生奖学金，2022 与 2024
+  - 同济大学优秀博士新生奖学金，2021
+  - 第十三届中国研究生数学建模竞赛二等奖，2020
+  - 同济大学优秀研究生奖学金，2020
+  - 第八届全国大学生数学竞赛一等奖，中国数学会，2016
+  - 同济大学优秀本科生奖学金，2016&ndash;2018
+
+# ---- 学术服务 ----
+service:
+  guest_editor:
+    - journal: Frontiers in Built Environment
+      topic: Advancements in Multi-Scale Sensing, Simulation, and Prediction of Urban Resilience from Infrastructure to City Level
+      topic_zh: 从基础设施到城市尺度的多尺度感知、模拟与城市韧性预测进展
+    - journal: Computational Urban Science
+      topic: Human-Centered Urban Digital Twins and Policy Insights
+      topic_zh: 以人为本的城市数字孪生与政策洞察
+  reviewer:
+    - Expert Systems with Applications
+    - Structural Control and Health Monitoring
+    - The Journal of Supercomputing
+    - Scientific Reports
+    - Discover Applied Sciences
+    - Discover Artificial Intelligence
+    - Journal of Civil Structural Health Monitoring

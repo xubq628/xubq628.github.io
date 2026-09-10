@@ -1,0 +1,100 @@
+# ============================================================================
+# 界面文案（中英双语）—— 改这里即可调整页面上的固定文字
+#
+# 说明：
+#   - 带 {xxx} 的是占位符，由模板/build.py 填入，请勿删掉花括号；
+#   - 值为 HTML 片段（本项目关掉了 autoescape，允许写 <strong>、<a> 等）；
+#   - 新增语言只需再复制一组，并在 build.py 的 LANGS 中登记。
+#   - 正文内容（简介、荣誉、论文等）不在这里，去 profile.yml / publications.yml。
+# ============================================================================
+
+en:
+  html_lang: en
+  # 页面 meta 描述
+  meta_fmt: '{name} — {role}, {department}, {affiliation}.'
+  # 顶部导航与页面标题
+  nav_about: About
+  nav_publications: Publications
+  nav_cv: CV
+  h1_about: About Me
+  h1_publications: Publications
+  h1_cv: Curriculum Vitae
+  # About 页
+  cited_sentence: >-
+    My work has been cited {citations} times on Google Scholar with an h-index of
+    {h_index} (as of {as_of}).
+  research_interests: Research Interests
+  education: Education
+  projects: Selected Research Projects
+  honors: Selected Honors
+  service: Academic Service
+  # 列表项格式
+  edu_fmt: '<strong>{degree}</strong>, {school}, {period}'
+  proj_fmt: '<strong>{role}</strong>, {title} &mdash; {funder} ({period})'
+  guest_editor_fmt: '<strong>Guest Editor</strong>, <em>{journal}</em> &mdash; &ldquo;{topic}&rdquo;'
+  reviewer_fmt: '<strong>Reviewer</strong> for {journals}'
+  # Publications 页
+  notice_fmt: >-
+    Google Scholar citations: <strong>{citations}</strong>, h-index: <strong>{h_index}</strong>
+    (as of {as_of}). Full list on
+    <a href="{scholar_url}" target="_blank" rel="noopener">Google Scholar</a>.
+  pub_note: ''
+  # 发表列表分区标题
+  pub_journal_articles: Journal Articles
+  pub_conference_papers: Conference Papers
+  pub_patents: Patents
+  pub_software_copyrights: Software Copyrights
+  # CV 页
+  download_pdf: Download PDF
+  cv_fallback: 'Your browser cannot display the PDF inline. <a href="{cv_pdf}">Download the CV (PDF)</a> instead.'
+  cv_note: ''
+  # 语言切换
+  switch_label: 中文
+  switch_title: 切换到中文版
+  follow_label: Follow
+  # 页脚
+  footer_fmt: >-
+    Powered by <a href="https://jekyllrb.com/" target="_blank" rel="noopener">Jekyll</a>
+    &amp; <a href="https://academicpages.github.io/" target="_blank" rel="noopener">AcademicPages</a> style.
+    &copy; {year} {name}.
+
+zh:
+  html_lang: zh-CN
+  meta_fmt: '{name} — {role}，{department}，{affiliation}。'
+  nav_about: 关于
+  nav_publications: 论文
+  nav_cv: 简历
+  h1_about: 个人简介
+  h1_publications: 论文发表
+  h1_cv: 个人简历
+  cited_sentence: >-
+    我的研究成果在 Google Scholar 上累计被引用 {citations} 次，h-index 为 {h_index}
+    （截至 {as_of}）。
+  research_interests: 研究兴趣
+  education: 教育经历
+  projects: 主要科研项目
+  honors: 荣誉奖励
+  service: 学术服务
+  edu_fmt: '<strong>{degree}</strong>，{school}，{period}'
+  proj_fmt: '<strong>{role}</strong>：{title} &mdash; {funder}（{period}）'
+  guest_editor_fmt: '<strong>客座编辑</strong>，<em>{journal}</em> &mdash; &ldquo;{topic}&rdquo;'
+  reviewer_fmt: '<strong>审稿人</strong>：{journals}'
+  notice_fmt: >-
+    Google Scholar 引用数：<strong>{citations}</strong>，h-index：<strong>{h_index}</strong>
+    （截至 {as_of}）。完整列表见
+    <a href="{scholar_url}" target="_blank" rel="noopener">Google Scholar</a>。
+  pub_note: 论文标题与期刊名按学术惯例保留英文原文。
+  pub_journal_articles: 期刊论文
+  pub_conference_papers: 会议论文
+  pub_patents: 专利
+  pub_software_copyrights: 软件著作权
+  download_pdf: 下载 PDF
+  cv_fallback: '您的浏览器无法内嵌显示该 PDF，请<a href="{cv_pdf}">下载简历（PDF）</a>。'
+  cv_note: 目前仅提供英文版简历。
+  switch_label: English
+  switch_title: Switch to English
+  follow_label: 关注
+  footer_fmt: >-
+    基于 <a href="https://jekyllrb.com/" target="_blank" rel="noopener">Jekyll</a>
+    与 <a href="https://academicpages.github.io/" target="_blank" rel="noopener">AcademicPages</a>
+    风格构建。&copy; {year} {name}。

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="{{ ui.html_lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ profile.name }} | {{ page_title }}</title>
+  <meta name="description" content="{{ ui.meta_fmt.format(name=profile.name, role=profile.role, department=profile.department, affiliation=profile.affiliation) }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.4/css/academicons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead__inner">
+    <a class="site-title" href="{{ nav[0].file }}">{{ profile.name }}</a>
+    <nav class="greedy-nav" id="greedy-nav">
+      <ul>
+        {% for item in nav %}
+        <li><a {% if item.id == page_id %}class="active" {% endif %}href="{{ item.file }}">{{ item.label }}</a></li>
+        {% endfor %}
+        <li class="lang-switch-item">
+          <a class="lang-switch" href="{{ alt_url }}" title="{{ ui.switch_title }}">{{ ui.switch_label }}</a>
+        </li>
+      </ul>
+      <button class="nav-toggle" onclick="document.getElementById('greedy-nav').classList.toggle('open')">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<div class="container">
+
+  <aside class="sidebar">
+    <div class="author__avatar">
+      <img src="{{ profile.avatar }}" alt="{{ profile.name }}">
+    </div>
+    <div class="author__content">
+      <div class="author__name">{{ profile.name }}</div>
+      <p class="author__bio">{{ profile.role }}<br>{{ profile.department }}<br>{{ profile.affiliation }}</p>
+    </div>
+    <div class="author__urls-wrapper">
+      <a class="btn--follow" href="{{ scholar_profile_url }}" target="_blank" rel="noopener">{{ ui.follow_label }}</a>
+      <ul class="author__urls">
+        <li><i class="fas fa-map-marker-alt"></i> {{ profile.location }}</li>
+        <li><i class="fas fa-building-columns"></i> {{ profile.affiliation }}</li>
+        {% for email in profile.emails %}
+        <li><i class="fas fa-envelope"></i> <a href="mailto:{{ email }}">{{ email }}</a></li>
+        {% endfor %}
+        <li><i class="ai ai-google-scholar"></i> <a href="{{ scholar_profile_url }}" target="_blank" rel="noopener">Google Scholar</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="page__content">
+      {% block content %}{% endblock %}
+    </div>
+  </main>
+</div>
+
+<footer class="page__footer">
+  <p>{{ ui.footer_fmt.format(year=year, name=profile.name) }}</p>
+</footer>
+
+</body>
+</html>

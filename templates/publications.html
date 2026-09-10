@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+
+      <h1 class="page__title">{{ ui.h1_publications }}</h1>
+
+      <div class="notice">
+        {{ ui.notice_fmt.format(
+             citations=profile.citations,
+             h_index=profile.h_index,
+             as_of=profile.stats_as_of,
+             scholar_url=scholar_profile_url) }}
+      </div>
+
+      {% if ui.pub_note %}<p class="pub-note">{{ ui.pub_note }}</p>{% endif %}
+
+      {% for section in pub_sections %}
+      <h2>{{ section.title }}</h2>
+      <ol class="pub-list">
+        {% for p in section.entries %}
+        <li>{{ p.authors_html }}
+          {% if p.url %}<a href="{{ p.url }}" target="_blank" rel="noopener">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}.
+          {% if p.venue %}<span class="pub-journal">{{ p.venue }}</span>, {% endif %}{{ p.detail }}.</li>
+        {% endfor %}
+      </ol>
+      {% endfor %}
+
+{% endblock %}

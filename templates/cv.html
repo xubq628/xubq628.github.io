@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+
+      <h1 class="page__title">{{ ui.h1_cv }}</h1>
+
+      <p><a class="btn--follow" href="{{ profile.cv_pdf }}" download>
+        <i class="fas fa-file-pdf"></i> {{ ui.download_pdf }}
+      </a></p>
+
+      {% if ui.cv_note %}<p class="pub-note">{{ ui.cv_note }}</p>{% endif %}
+
+      <object class="cv-embed" data="{{ profile.cv_pdf }}" type="application/pdf">
+        <p>{{ ui.cv_fallback.format(cv_pdf=profile.cv_pdf) }}</p>
+      </object>
+
+{% endblock %}
