@@ -165,6 +165,48 @@ python update_stats.py && python build.py
 `C:\Users\84170\.workbuddy\binaries\python\envs\default\Scripts\python.exe`，
 起始于本目录。若已把站点托管到 GitHub Pages，再在末尾追加 `git commit && git push` 完成发布。
 
+### 7. 部署到 GitHub Pages
+
+本目录已初始化为 git 仓库（分支 `main`），并放置了 `.nojekyll` 以关闭 Jekyll 处理。
+先在 GitHub 网页上新建一个**空仓库**（不要勾选初始化 README / .gitignore），然后：
+
+```bash
+git remote add origin https://github.com/<用户名>/<仓库名>.git
+git push -u origin main
+```
+
+推送需要认证 —— GitHub 已不接受账号密码，二选一：
+
+- **Personal Access Token**（推荐）：Settings → Developer settings → Personal access tokens
+  → Fine-grained，只勾选该仓库的 `Contents: Read and write`。推送时用户名填 GitHub 用户名、密码栏粘贴 token。
+- **SSH key**：`ssh-keygen -t ed25519 -C "xubq628@gmail.com"`，
+  把 `~/.ssh/id_ed25519.pub` 内容贴到 Settings → SSH keys。
+
+推完后进入仓库 **Settings → Pages**，Source 选 **Deploy from a branch**，
+Branch 选 `main` + `/(root)`，保存后等 1–2 分钟生效。
+
+| 仓库名 | 访问网址 |
+|---|---|
+| `<用户名>.github.io` | `https://<用户名>.github.io/` |
+| 其他（如 `homepage`） | `https://<用户名>.github.io/<仓库名>/` |
+
+本项目全部使用**相对路径**，两种方式都无需修改代码。
+
+> ⚠️ **GitHub Pages 免费版只能发布公开仓库**（私有仓库需 GitHub Pro/Team）。
+> 本目录的 `Part B2_SURF-OP.docx`、`.workbuddy/` 等已在 `.gitignore` 中排除。
+> **新增任何文件后，推送前先 `git status` 确认没有敏感内容。**
+> 注意 gitignore **不支持行尾注释**，注释必须独占一行，否则整行会被当成模式。
+
+> ⚠️ **不要**把 `update_stats.py` 放进 GitHub Actions 定时执行：
+> Google Scholar 对数据中心 IP 封锁极严，Actions 的出口 IP 基本必被拦截。
+> 保持在本地每周运行，更新完 `git push` 即可。
+
+日常更新一行搞定：
+
+```bash
+python update_stats.py && python build.py && git add -A && git commit -m "Update" && git push
+```
+
 ## 注意事项
 
 - **不要直接编辑根目录的 6 个 HTML**——每次构建都会被覆盖，改 `data/` 和 `templates/` 才是源头；
