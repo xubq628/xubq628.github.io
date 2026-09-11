@@ -174,7 +174,8 @@ img { max-width: 100%; }
   text-overflow: ellipsis;
 }
 .author__urls i { width: 1.3em; text-align: center; margin-right: 0.25em; color: var(--heading-color); }
-.btn--follow {
+/* 通用按钮（原 btn--follow，Follow 按钮移除后改名） */
+.btn {
   display: inline-block;
   padding: 0.45em 1.1em;
   font-size: 0.85em;
@@ -185,7 +186,7 @@ img { max-width: 100%; }
   border-radius: 4px;
   cursor: pointer;
 }
-.btn--follow:hover {
+.btn:hover {
   text-decoration: none;
   background: var(--code-bg);
   color: var(--heading-color);
