@@ -39,15 +39,15 @@ h_index: 9
 stats_as_of: September 2026
 stats_as_of_zh: 2026 年 9 月
 
-# ---- About 页：个人简介段落（支持 HTML 标签，如 <a href="...">） ----
+# ---- About 页：个人简介段落（支持 HTML 标签，如 <strong>） ----
 about:
   - >-
     I am a Postdoctoral Fellow in the Department of Architecture and Civil Engineering at
-    <a href="https://www.cityu.edu.hk/" target="_blank" rel="noopener">City University of Hong Kong</a>.
+    <strong>City University of Hong Kong</strong>.
     I received my Ph.D. in Civil Engineering from the Department of Bridge Engineering, College of Civil Engineering,
-    <a href="https://www.tongji.edu.cn/" target="_blank" rel="noopener">Tongji University</a> (2025),
+    <strong>Tongji University</strong> (2025),
     and was a visiting Ph.D. student in the Department of the Built Environment at the
-    <a href="https://www.nus.edu.sg/" target="_blank" rel="noopener">National University of Singapore</a> (2023&ndash;2024),
+    <strong>National University of Singapore</strong> (2023&ndash;2024),
     supported by the China Scholarship Council.
   - >-
     My research focuses on computer vision and machine learning for civil infrastructure,
@@ -55,10 +55,10 @@ about:
     and time-series modeling of bridge monitoring data.
 about_zh:
   - >-
-    我是<a href="https://www.cityu.edu.hk/" target="_blank" rel="noopener">香港城市大学</a>建筑学及土木工程学系博士后研究员。
-    2025 年于<a href="https://www.tongji.edu.cn/" target="_blank" rel="noopener">同济大学</a>土木工程学院桥梁工程系获土木工程博士学位，
+    我是<strong>香港城市大学</strong>建筑学及土木工程学系博士后研究员。
+    2025 年于<strong>同济大学</strong>土木工程学院桥梁工程系获土木工程博士学位，
     2023 至 2024 年由国家留学基金委（CSC）资助，赴
-    <a href="https://www.nus.edu.sg/" target="_blank" rel="noopener">新加坡国立大学</a>建筑环境系访问学习。
+    <strong>新加坡国立大学</strong>建筑环境系访问学习。
   - >-
     我的研究聚焦于面向土木基础设施的计算机视觉与机器学习，涵盖结构健康监测、车辆荷载识别、
     基于视觉的损伤检测，以及桥梁监测数据的时间序列建模。
