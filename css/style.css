@@ -227,8 +227,17 @@ img { max-width: 100%; }
   font-size: 1.05em;
   line-height: 1.45;
 }
-.archive__item-title a { color: var(--heading-color); }
-.archive__item-title a:hover { color: var(--link-hover); text-decoration: underline; }
+/* 论文标题：蓝色加粗带下划线（仅对可点击的条目生效；
+   专利/软著没有链接，标题保持深色不加下划线，避免看起来可点） */
+.archive__item-title a {
+  color: var(--link-color);
+  font-weight: 700;
+  text-decoration: underline;
+}
+.archive__item-title a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
 
 .archive__item-meta {
   margin: 0 0 0.25em;
