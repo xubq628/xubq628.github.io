@@ -7,10 +7,60 @@
         <i class="fas fa-file-pdf"></i> {{ ui.download_pdf }}
       </a></p>
 
-      {% if ui.cv_note %}<p class="pub-note">{{ ui.cv_note }}</p>{% endif %}
+      {% if ui.cv_note %}<p class="page__note">{{ ui.cv_note }}</p>{% endif %}
 
-      <object class="cv-embed" data="{{ profile.cv_pdf }}" type="application/pdf">
-        <p>{{ ui.cv_fallback.format(cv_pdf=profile.cv_pdf) }}</p>
-      </object>
+      <h2>{{ ui.education }}</h2>
+      <ul>
+        {% for e in profile.education %}
+        <li>{{ ui.edu_fmt.format(degree=e.degree, school=e.school, period=e.period) }}</li>
+        {% endfor %}
+      </ul>
+
+      <h2>{{ ui.experience }}</h2>
+      <ul class="cv-list">
+        {% for x in profile.experience %}
+        <li>{{ x.period }}: <strong>{{ x.role }}</strong>
+          <ul>
+            <li>{{ x.org }}</li>
+            <li>{{ x.dept }}</li>
+          </ul>
+        </li>
+        {% endfor %}
+      </ul>
+
+      <h2>{{ ui.projects }}</h2>
+      <ul class="cv-list">
+        {% for p in profile.projects %}
+        <li>{{ p.period }}: <strong>{{ p.title }}</strong>
+          <ul>
+            <li>{{ p.role }} &mdash; {{ p.funder }}</li>
+            <li>{{ ui.duties_label }}:
+              <ul>
+                {% for b in p.bullets %}
+                <li>{{ b }}</li>
+                {% endfor %}
+              </ul>
+            </li>
+          </ul>
+        </li>
+        {% endfor %}
+      </ul>
+
+      <h2>{{ ui.honors }}</h2>
+      <ul>
+        {% for h in profile.honors %}
+        <li>{{ h }}</li>
+        {% endfor %}
+      </ul>
+
+      <h2>{{ ui.service }}</h2>
+      <ul>
+        {% for g in profile.service.guest_editor %}
+        <li>{{ ui.guest_editor_fmt.format(journal=g.journal, topic=g.topic) }}</li>
+        {% endfor %}
+        <li>{{ ui.reviewer_fmt.format(journals=profile.service.reviewer_html) }}</li>
+      </ul>
+
+      <p class="page__note">{{ ui.cv_pubs_note }}</p>
 
 {% endblock %}

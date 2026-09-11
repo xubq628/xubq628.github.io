@@ -113,7 +113,18 @@ education:
     school_zh: 同济大学
     period: 2015&ndash;2017
 
-# ---- 科研项目 ----
+# ---- 工作经历 ----
+experience:
+  - role: Postdoctoral Fellow
+    role_zh: 博士后研究员
+    org: City University of Hong Kong
+    org_zh: 香港城市大学
+    dept: Department of Architecture and Civil Engineering
+    dept_zh: 建筑学及土木工程学系
+    period: Nov. 2025&ndash;Present
+    period_zh: 2025 年 11 月至今
+
+# ---- 科研项目（bullets 为项目内的工作要点，取自 CV） ----
 projects:
   - role: Key Researcher
     role_zh: 主要研究人员
@@ -122,6 +133,18 @@ projects:
     funder: Science and Technology Project of Zhejiang Provincial Department of Transportation
     funder_zh: 浙江省交通运输厅科技项目
     period: 2022&ndash;2024
+    bullets:
+      - Deep learning framework for real-time vehicle axle load position detection, integrated with a weigh-in-motion (WIM) system
+      - Homography matrix estimation for the camera-to-road mapping based on lane geometric prior information, removing the need for on-site labelling
+      - GAN-based detection of road and bridge cracks in small-sample scenarios
+      - Nighttime crack detection based on image-to-image translation models
+      - Weakly-supervised and unsupervised damage detection algorithms for scenarios with limited labelled data
+    bullets_zh:
+      - 融合动态称重（WIM）系统的车辆轴载位置实时检测深度学习框架
+      - 基于车道几何先验的相机&ndash;路面单应矩阵估计算法，免除现场标定
+      - 小样本场景下基于生成对抗网络的道路与桥梁裂缝检测
+      - 基于图像到图像翻译模型的夜间裂缝检测方法
+      - 面向标注数据有限场景的弱监督与无监督损伤检测算法
   - role: Key Researcher
     role_zh: 主要研究人员
     title: Intelligent Vehicle-Bridge Correlation Monitoring Technology of Long-Span Continuous Beam Bridge with Corrugated Steel Webs
@@ -129,6 +152,18 @@ projects:
     funder: Science and Technology Project of Hebei Provincial Department of Transportation
     funder_zh: 河北省交通运输厅科技项目
     period: 2022&ndash;2024
+    bullets:
+      - Monocular 3D inference algorithm integrated with deep learning models for identifying the spatial-temporal distribution of vehicle wheel loads
+      - Vehicle wheel load identification framework for dense heavy traffic using image inpainting models
+      - Bridge strain high-frequency information extraction based on wavelet multiresolution analysis
+      - Deep kernel regression Bayesian model for time-series forecasting of temperature-induced bridge strain
+      - Vehicle load&ndash;bridge response correlation analysis and development of a bridge weigh-in-motion (B-WIM) system
+    bullets_zh:
+      - 融合深度学习的单目三维推理算法，识别车辆轮载的时空分布
+      - 密集重载车流下基于图像修复模型的车辆轮载识别框架
+      - 基于小波多分辨率分析的桥梁应变高频信息提取
+      - 用于温度致桥梁应变时间序列预测的深度核回归贝叶斯模型
+      - 车辆荷载&ndash;桥梁响应相关性分析与桥梁动态称重（B-WIM）系统研发
 
 # ---- 荣誉奖励（每行一条，格式自由：名称, 颁发方, 年份） ----
 honors:

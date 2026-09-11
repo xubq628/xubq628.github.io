@@ -19,33 +19,4 @@
         {% endfor %}
       </ul>
 
-      <h2>{{ ui.education }}</h2>
-      <ul>
-        {% for e in profile.education %}
-        <li>{{ ui.edu_fmt.format(degree=e.degree, school=e.school, period=e.period) }}</li>
-        {% endfor %}
-      </ul>
-
-      <h2>{{ ui.projects }}</h2>
-      <ul>
-        {% for p in profile.projects %}
-        <li>{{ ui.proj_fmt.format(role=p.role, title=p.title, funder=p.funder, period=p.period) }}</li>
-        {% endfor %}
-      </ul>
-
-      <h2>{{ ui.honors }}</h2>
-      <ul>
-        {% for h in profile.honors %}
-        <li>{{ h }}</li>
-        {% endfor %}
-      </ul>
-
-      <h2>{{ ui.service }}</h2>
-      <ul>
-        {% for g in profile.service.guest_editor %}
-        <li>{{ ui.guest_editor_fmt.format(journal=g.journal, topic=g.topic) }}</li>
-        {% endfor %}
-        <li>{{ ui.reviewer_fmt.format(journals=profile.service.reviewer_html) }}</li>
-      </ul>
-
 {% endblock %}

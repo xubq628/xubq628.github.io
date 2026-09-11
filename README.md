@@ -27,6 +27,21 @@ homepage/
     └── index.zh.html        publications.zh.html        cv.zh.html         ← 中文
 ```
 
+## 三个页面的分工
+
+| 页面 | 放什么 |
+|---|---|
+| **About**（`index.html`） | 只有个人简介与**研究兴趣** —— 首页保持精简 |
+| **Publications**（`publications.html`） | 期刊论文、会议论文、专利、软件著作权 |
+| **CV**（`cv.html`） | **教育经历、工作经历、主要研究经历（含各项目工作要点）、荣誉奖励、学术服务**，顶部是 CV 的 PDF 下载按钮 |
+
+- CV 页的内容取自 `profile.yml` 的 `education` / `experience` / `projects` / `honors` / `service`，
+  版式参照 academicpages 的 CV 页：分节标题 + 列表，明细用**嵌套列表**。
+- `projects` 里每条带 `bullets` / `bullets_zh`，即该项目的工作要点（中英各 5 条，长度必须一致）。
+- 这些内容**只在 CV 页出现**，首页不再重复，避免两处维护。
+- CV 页**不内嵌 PDF**，只提供下载按钮（改回内嵌的话在 `templates/cv.html` 加 `<object class="cv-embed">` 即可，
+  `.cv-embed` 样式已移除，需要时补回）。
+
 ## 中英双语是怎么实现的
 
 **英文写在各字段本身，中文写在同名 `_zh` 字段。**

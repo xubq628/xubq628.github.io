@@ -25,9 +25,11 @@ en:
     {h_index} (as of {as_of}).
   research_interests: Research Interests
   education: Education
-  projects: Selected Research Projects
-  honors: Selected Honors
+  experience: Experience
+  projects: Research Experience
+  honors: Honors and Awards
   service: Academic Service
+  duties_label: Duties included
   # 列表项格式
   edu_fmt: '<strong>{degree}</strong>, {school}, {period}'
   proj_fmt: '<strong>{role}</strong>, {title} &mdash; {funder} ({period})'
@@ -50,8 +52,8 @@ en:
   pub_software_copyrights: Software Copyrights
   # CV 页
   download_pdf: Download PDF
-  cv_fallback: 'Your browser cannot display the PDF inline. <a href="{cv_pdf}">Download the CV (PDF)</a> instead.'
   cv_note: ''
+  cv_pubs_note: 'Full list of publications on the <a href="publications.html">Publications</a> page.'
   # 侧栏链接标签
   link_google_scholar: Google Scholar
   link_orcid: ORCID
@@ -79,9 +81,11 @@ zh:
     （截至 {as_of}）。
   research_interests: 研究兴趣
   education: 教育经历
-  projects: 主要科研项目
+  experience: 工作经历
+  projects: 主要研究经历
   honors: 荣誉奖励
   service: 学术服务
+  duties_label: 主要工作
   edu_fmt: '<strong>{degree}</strong>，{school}，{period}'
   proj_fmt: '<strong>{role}</strong>：{title} &mdash; {funder}（{period}）'
   guest_editor_fmt: '<strong>客座编辑</strong>，<em>{journal}</em> &mdash; &ldquo;{topic}&rdquo;'
@@ -99,8 +103,8 @@ zh:
   pub_patents: 专利
   pub_software_copyrights: 软件著作权
   download_pdf: 下载 PDF
-  cv_fallback: '您的浏览器无法内嵌显示该 PDF，请<a href="{cv_pdf}">下载简历（PDF）</a>。'
   cv_note: 目前仅提供英文版简历。
+  cv_pubs_note: '完整论文列表见<a href="publications.html">论文发表</a>页。'
   # 侧栏链接标签
   link_google_scholar: Google Scholar
   link_orcid: ORCID
