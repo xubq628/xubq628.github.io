@@ -127,19 +127,30 @@ def scholar_citation_url(user: str, cid: str) -> str:
 
 
 def process_pubs(pubs: dict, scholar_user: str, ui: dict) -> list:
-    """为每条记录预计算 authors_html 与 url，并按分区打包（标题取 ui 文案）。"""
+    """
+    为每条记录预计算作者加粗、主链接与底部操作链接，并按分区打包（标题取 ui 文案）。
+
+    - url         主链接（标题指向这里）：优先出版社 DOI，其次 Scholar citation 页
+    - doi_url     出版社 DOI 链接（有才输出）
+    - scholar_url Google Scholar citation 页（有 scholar_id 才输出）
+    doi_url / scholar_url 用于条目底部的 "DOI | Google Scholar" 操作行，
+    因此两者都填时，标题走 DOI、同时仍保留 Scholar 入口。
+    """
     sections = []
     for key, ui_key in PUB_SECTIONS:
         entries = []
         for p in pubs.get(key) or []:
             p = dict(p)
             p["authors_html"] = bold_self(p.get("authors", ""))
-            if p.get("link"):
-                p["url"] = p["link"]
-            elif p.get("scholar_id"):
-                p["url"] = scholar_citation_url(scholar_user, p["scholar_id"])
-            else:
-                p["url"] = None
+
+            p["doi_url"] = p.get("link") or None
+            p["scholar_url"] = (
+                scholar_citation_url(scholar_user, p["scholar_id"])
+                if p.get("scholar_id")
+                else None
+            )
+            p["url"] = p["doi_url"] or p["scholar_url"]
+
             entries.append(p)
         sections.append({"title": ui[ui_key], "entries": entries})
     return sections

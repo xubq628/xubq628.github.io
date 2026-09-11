@@ -204,21 +204,47 @@ img { max-width: 100%; }
 .page__content ul { padding-left: 1.4em; }
 .page__content li { margin-bottom: 0.4em; }
 
-.pub-list { list-style: none; padding: 0; counter-reset: pub; }
-.pub-list li {
-  counter-increment: pub;
-  margin-bottom: 1em;
-  padding-left: 2.2em;
-  position: relative;
-  font-size: 0.97em;
+/* --------------------------------------------------------------------------
+   Publications —— 参考 academicpages 的 archive__item 版式
+   （标题为醒目标题行，下接作者、期刊行，末尾是 | 分隔的操作链接）
+   -------------------------------------------------------------------------- */
+.list__item {
+  padding-bottom: 1.3em;
+  margin-bottom: 1.5em;
+  border-bottom: 1px solid var(--border-color);
 }
-.pub-list li::before {
-  content: "[" counter(pub) "]";
-  position: absolute;
-  left: 0;
+.list__item:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.archive__item-title {
+  margin: 0 0 0.35em;
+  padding: 0;
+  border: none;
+  font-size: 1.05em;
+  line-height: 1.45;
+}
+.archive__item-title a { color: var(--heading-color); }
+.archive__item-title a:hover { color: var(--link-hover); text-decoration: underline; }
+
+.archive__item-meta {
+  margin: 0 0 0.25em;
+  font-size: 0.93em;
+}
+.archive__item-venue {
+  margin: 0 0 0.55em;
+  font-size: 0.93em;
   color: var(--muted-color);
 }
-.pub-list .pub-journal { font-style: italic; }
+.archive__item-venue .pub-journal { font-style: italic; }
+
+.archive__item-links {
+  margin: 0;
+  font-size: 0.9em;
+}
+.archive__item-links .sep { color: var(--border-dark); margin: 0 0.45em; }
 
 .notice {
   background: var(--code-bg);

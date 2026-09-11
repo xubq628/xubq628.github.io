@@ -41,14 +41,19 @@
       <p class="author__bio">{{ profile.role }}<br>{{ profile.department }}<br>{{ profile.affiliation }}</p>
     </div>
     <div class="author__urls-wrapper">
-      <a class="btn--follow" href="{{ scholar_profile_url }}" target="_blank" rel="noopener">{{ ui.follow_label }}</a>
       <ul class="author__urls">
         <li><i class="fas fa-map-marker-alt"></i> {{ profile.location }}</li>
         <li><i class="fas fa-building-columns"></i> {{ profile.affiliation }}</li>
         {% for email in profile.emails %}
         <li><i class="fas fa-envelope"></i> <a href="mailto:{{ email }}">{{ email }}</a></li>
         {% endfor %}
-        <li><i class="ai ai-google-scholar"></i> <a href="{{ scholar_profile_url }}" target="_blank" rel="noopener">Google Scholar</a></li>
+        <li><i class="ai ai-google-scholar"></i> <a href="{{ scholar_profile_url }}" target="_blank" rel="noopener">{{ ui.link_google_scholar }}</a></li>
+        {% if profile.orcid %}
+        <li><i class="ai ai-orcid"></i> <a href="https://orcid.org/{{ profile.orcid }}" target="_blank" rel="noopener">{{ ui.link_orcid }}</a></li>
+        {% endif %}
+        {% if profile.linkedin %}
+        <li><i class="fab fa-linkedin"></i> <a href="{{ profile.linkedin }}" target="_blank" rel="noopener">{{ ui.link_linkedin }}</a></li>
+        {% endif %}
       </ul>
     </div>
   </aside>

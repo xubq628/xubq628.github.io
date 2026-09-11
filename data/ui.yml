@@ -39,6 +39,10 @@ en:
     (as of {as_of}). Full list on
     <a href="{scholar_url}" target="_blank" rel="noopener">Google Scholar</a>.
   pub_note: ''
+  # 发表条目：期刊行与底部操作链接
+  pub_published_in: Published in
+  pub_link_doi: DOI
+  pub_link_scholar: Google Scholar
   # 发表列表分区标题
   pub_journal_articles: Journal Articles
   pub_conference_papers: Conference Papers
@@ -48,10 +52,13 @@ en:
   download_pdf: Download PDF
   cv_fallback: 'Your browser cannot display the PDF inline. <a href="{cv_pdf}">Download the CV (PDF)</a> instead.'
   cv_note: ''
+  # 侧栏链接标签
+  link_google_scholar: Google Scholar
+  link_orcid: ORCID
+  link_linkedin: LinkedIn
   # 语言切换
   switch_label: 中文
   switch_title: 切换到中文版
-  follow_label: Follow
   # 页脚
   footer_fmt: >-
     Powered by <a href="https://jekyllrb.com/" target="_blank" rel="noopener">Jekyll</a>
@@ -84,6 +91,9 @@ zh:
     （截至 {as_of}）。完整列表见
     <a href="{scholar_url}" target="_blank" rel="noopener">Google Scholar</a>。
   pub_note: 论文标题与期刊名按学术惯例保留英文原文。
+  pub_published_in: 发表于
+  pub_link_doi: DOI
+  pub_link_scholar: Google Scholar
   pub_journal_articles: 期刊论文
   pub_conference_papers: 会议论文
   pub_patents: 专利
@@ -91,9 +101,12 @@ zh:
   download_pdf: 下载 PDF
   cv_fallback: '您的浏览器无法内嵌显示该 PDF，请<a href="{cv_pdf}">下载简历（PDF）</a>。'
   cv_note: 目前仅提供英文版简历。
+  # 侧栏链接标签
+  link_google_scholar: Google Scholar
+  link_orcid: ORCID
+  link_linkedin: LinkedIn
   switch_label: English
   switch_title: Switch to English
-  follow_label: 关注
   footer_fmt: >-
     基于 <a href="https://jekyllrb.com/" target="_blank" rel="noopener">Jekyll</a>
     与 <a href="https://academicpages.github.io/" target="_blank" rel="noopener">AcademicPages</a>

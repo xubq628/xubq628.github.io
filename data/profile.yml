@@ -28,6 +28,11 @@ emails:
 # Google Scholar 用户 ID（主页 URL 中 user= 后面的部分）
 scholar_user: bW6bHowAAAAJ
 
+# ---- 其他学术主页 / 社交链接（侧栏显示）----
+# ORCID 只填 iD 本身，链接由模板拼成 https://orcid.org/<iD>
+orcid: 0000-0002-6496-1279
+linkedin: https://www.linkedin.com/in/boqiang-xu-5705432a3/
+
 # ---- 引用统计（Publications 页顶部显示） ----
 citations: 348
 h_index: 9
